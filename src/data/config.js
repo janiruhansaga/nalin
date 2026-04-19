@@ -1,0 +1,47 @@
+// Static configuration for Designs by OVKB
+// Replace WHATSAPP_NUMBER and product image_url values with real assets later.
+
+export const WHATSAPP_NUMBER = "947XXXXXXXX";
+
+export const PRODUCTS = [
+  {
+    id: 1,
+    title: "Birthday Bloom",
+    image_url: "https://images.unsplash.com/photo-1513151233558-d860c5398176?w=800&q=80",
+  },
+  {
+    id: 2,
+    title: "Whispered Thanks",
+    image_url: "https://images.unsplash.com/photo-1546565551-cf6f5e3a1c5e?w=800&q=80",
+  },
+  {
+    id: 3,
+    title: "Vintage Love",
+    image_url: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=800&q=80",
+  },
+  {
+    id: 4,
+    title: "Wedding Wishes",
+    image_url: "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
+  },
+  {
+    id: 5,
+    title: "Festive Joy",
+    image_url: "https://images.unsplash.com/photo-1512909006721-3d6018887383?w=800&q=80",
+  },
+  {
+    id: 6,
+    title: "Botanical Hello",
+    image_url: "https://images.unsplash.com/photo-1502635385003-ee1e6a1a742d?w=800&q=80",
+  },
+  {
+    id: 7,
+    title: "Quiet Sympathy",
+    image_url: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80",
+  },
+  {
+    id: 8,
+    title: "Little One",
+    image_url: "https://images.unsplash.com/photo-1530021232320-687d8e3dba54?w=800&q=80",
+  },
+];

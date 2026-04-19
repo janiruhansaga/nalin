@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Designs by OVKB — Elegant, warm, minimal design system.
+   All colors MUST be HSL. */
+
+@layer base {
+  :root {
+    /* Cream / charcoal palette */
+    --background: 38 40% 97%;          /* warm cream */
+    --foreground: 25 15% 15%;          /* deep charcoal */
+
+    --card: 40 50% 99%;
+    --card-foreground: 25 15% 15%;
+
+    --popover: 40 50% 99%;
+    --popover-foreground: 25 15% 15%;
+
+    --primary: 25 20% 18%;             /* charcoal ink */
+    --primary-foreground: 38 40% 97%;
+
+    --secondary: 35 30% 92%;
+    --secondary-foreground: 25 15% 15%;
+
+    --muted: 35 25% 93%;
+    --muted-foreground: 25 10% 40%;
+
+    --accent: 18 45% 55%;              /* warm terracotta */
+    --accent-foreground: 38 40% 97%;
+
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 38 40% 97%;
+
+    --border: 30 20% 88%;
+    --input: 30 20% 88%;
+    --ring: 25 20% 18%;
+
+    --radius: 0.25rem;
+
+    /* Custom tokens */
+    --gradient-warm: linear-gradient(180deg, hsl(38 50% 98%) 0%, hsl(35 35% 94%) 100%);
+    --shadow-soft: 0 10px 40px -15px hsl(25 25% 25% / 0.15);
+    --shadow-card: 0 4px 20px -8px hsl(25 25% 25% / 0.12);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+  h1, h2, h3, h4 {
+    @apply font-serif tracking-tight;
+  }
+}
+
+@layer utilities {
+  .bg-warm-gradient {
+    background: var(--gradient-warm);
+  }
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+}
